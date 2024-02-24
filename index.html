@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>web storage with json</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 align="center">Penambahan User Baru</h1>
+    <div class="content" align="center">
+      <div class="child-content" id="user-form">
+        <h2>form user data</h2>
+        <hr />
+        <form id="form-data-user">
+          <div class="form-element">
+            <label for="nama">Nama User : </label><br />
+            <input
+              type="text"
+              id="nama"
+              name="nama"
+              placeholder="nama user"
+              value=""
+              maxlength="10"
+              required
+            /><br />
+          </div>
+
+          <div class="form-element">
+            <label for="umur">umur user : </label><br />
+            <input
+              id="umur"
+              type="text"
+              name="umur"
+              placeholder="umur user"
+              value=""
+              maxlength="3"
+              required
+            /><br />
+          </div>
+
+          <div class="form-element">
+            <input type="submit" id="submitButton" value="Submit Data" />
+          </div>
+        </form>
+      </div>
+
+      <div class="child-content" id="user-list">
+        <h2>User List</h2>
+        <hr />
+        <table id="user-list-table">
+          <thead>
+            <tr>
+              <th>Nama</th>
+              <th>umur</th>
+              <th>domisili</th>
+            </tr>
+          </thead>
+          <tbody id="user-list-detail" align="center"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
